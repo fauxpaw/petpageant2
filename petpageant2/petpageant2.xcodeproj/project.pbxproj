@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4C0DF91021DF8CE500238B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF90F21DF8CE500238B87 /* AppDelegate.swift */; };
-		4C0DF91221DF8CE500238B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF91121DF8CE500238B87 /* ViewController.swift */; };
 		4C0DF91521DF8CE500238B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0DF91321DF8CE500238B87 /* Main.storyboard */; };
 		4C0DF91821DF8CE500238B87 /* petpageant2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF91621DF8CE500238B87 /* petpageant2.xcdatamodeld */; };
 		4C0DF91A21DF8CE600238B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0DF91921DF8CE600238B87 /* Assets.xcassets */; };
 		4C0DF91D21DF8CE600238B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0DF91B21DF8CE600238B87 /* LaunchScreen.storyboard */; };
 		4C0DF92821DF8CE600238B87 /* petpageant2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF92721DF8CE600238B87 /* petpageant2Tests.swift */; };
 		4C0DF93321DF8CE600238B87 /* petpageant2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF93221DF8CE600238B87 /* petpageant2UITests.swift */; };
+		4C0DF94721DFAEBB00238B87 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF94621DFAEBB00238B87 /* VoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		4C0DF90C21DF8CE500238B87 /* petpageant2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petpageant2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0DF90F21DF8CE500238B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C0DF91121DF8CE500238B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C0DF91421DF8CE500238B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0DF91721DF8CE500238B87 /* petpageant2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = petpageant2.xcdatamodel; sourceTree = "<group>"; };
 		4C0DF91921DF8CE600238B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		4C0DF92E21DF8CE600238B87 /* petpageant2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petpageant2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0DF93221DF8CE600238B87 /* petpageant2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petpageant2UITests.swift; sourceTree = "<group>"; };
 		4C0DF93421DF8CE600238B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0DF94621DFAEBB00238B87 /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoteViewController.swift; path = Controller/VoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				4C0DF90F21DF8CE500238B87 /* AppDelegate.swift */,
-				4C0DF91121DF8CE500238B87 /* ViewController.swift */,
-				4C0DF91321DF8CE500238B87 /* Main.storyboard */,
-				4C0DF91921DF8CE600238B87 /* Assets.xcassets */,
-				4C0DF91B21DF8CE600238B87 /* LaunchScreen.storyboard */,
-				4C0DF91E21DF8CE600238B87 /* Info.plist */,
-				4C0DF91621DF8CE500238B87 /* petpageant2.xcdatamodeld */,
+				4C0DF94521DFAE7C00238B87 /* App Global */,
+				4C0DF94321DFA73300238B87 /* Profile */,
+				4C0DF94121DFA71900238B87 /* Leaderboard */,
+				4C0DF94421DFAE6700238B87 /* Vote */,
 			);
 			path = petpageant2;
 			sourceTree = "<group>";
@@ -126,6 +124,56 @@
 				4C0DF93421DF8CE600238B87 /* Info.plist */,
 			);
 			path = petpageant2UITests;
+			sourceTree = "<group>";
+		};
+		4C0DF94021DFA6E000238B87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C0DF94121DFA71900238B87 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		4C0DF94321DFA73300238B87 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4C0DF94421DFAE6700238B87 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				4C0DF94021DFA6E000238B87 /* Controller */,
+				4C0DF94621DFAEBB00238B87 /* VoteViewController.swift */,
+				4C0DF94821DFAF0A00238B87 /* View */,
+			);
+			path = Vote;
+			sourceTree = "<group>";
+		};
+		4C0DF94521DFAE7C00238B87 /* App Global */ = {
+			isa = PBXGroup;
+			children = (
+				4C0DF91B21DF8CE600238B87 /* LaunchScreen.storyboard */,
+				4C0DF91921DF8CE600238B87 /* Assets.xcassets */,
+				4C0DF91321DF8CE500238B87 /* Main.storyboard */,
+				4C0DF91621DF8CE500238B87 /* petpageant2.xcdatamodeld */,
+				4C0DF91E21DF8CE600238B87 /* Info.plist */,
+			);
+			path = "App Global";
+			sourceTree = "<group>";
+		};
+		4C0DF94821DFAF0A00238B87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0DF91221DF8CE500238B87 /* ViewController.swift in Sources */,
+				4C0DF94721DFAEBB00238B87 /* VoteViewController.swift in Sources */,
 				4C0DF91821DF8CE500238B87 /* petpageant2.xcdatamodeld in Sources */,
 				4C0DF91021DF8CE500238B87 /* AppDelegate.swift in Sources */,
 			);
