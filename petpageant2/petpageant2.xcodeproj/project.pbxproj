@@ -15,6 +15,9 @@
 		4C0DF92821DF8CE600238B87 /* petpageant2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF92721DF8CE600238B87 /* petpageant2Tests.swift */; };
 		4C0DF93321DF8CE600238B87 /* petpageant2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF93221DF8CE600238B87 /* petpageant2UITests.swift */; };
 		4C0DF94721DFAEBB00238B87 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF94621DFAEBB00238B87 /* VoteViewController.swift */; };
+		4C0DF94A21DFAF9900238B87 /* VotePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0DF94921DFAF9900238B87 /* VotePicView.xib */; };
+		4C0DF94C21DFB01800238B87 /* VotePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF94B21DFB01800238B87 /* VotePicView.swift */; };
+		4C0DF94E21DFB1B500238B87 /* UIView+fixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DF94D21DFB1B500238B87 /* UIView+fixView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4C0DF93221DF8CE600238B87 /* petpageant2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petpageant2UITests.swift; sourceTree = "<group>"; };
 		4C0DF93421DF8CE600238B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0DF94621DFAEBB00238B87 /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoteViewController.swift; path = Controller/VoteViewController.swift; sourceTree = "<group>"; };
+		4C0DF94921DFAF9900238B87 /* VotePicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VotePicView.xib; sourceTree = "<group>"; };
+		4C0DF94B21DFB01800238B87 /* VotePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotePicView.swift; sourceTree = "<group>"; };
+		4C0DF94D21DFB1B500238B87 /* UIView+fixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fixView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 		4C0DF90E21DF8CE500238B87 /* petpageant2 */ = {
 			isa = PBXGroup;
 			children = (
-				4C0DF90F21DF8CE500238B87 /* AppDelegate.swift */,
+				4C0DF91E21DF8CE600238B87 /* Info.plist */,
 				4C0DF94521DFAE7C00238B87 /* App Global */,
 				4C0DF94321DFA73300238B87 /* Profile */,
 				4C0DF94121DFA71900238B87 /* Leaderboard */,
@@ -160,11 +166,12 @@
 		4C0DF94521DFAE7C00238B87 /* App Global */ = {
 			isa = PBXGroup;
 			children = (
+				4C0DF90F21DF8CE500238B87 /* AppDelegate.swift */,
 				4C0DF91B21DF8CE600238B87 /* LaunchScreen.storyboard */,
 				4C0DF91921DF8CE600238B87 /* Assets.xcassets */,
 				4C0DF91321DF8CE500238B87 /* Main.storyboard */,
 				4C0DF91621DF8CE500238B87 /* petpageant2.xcdatamodeld */,
-				4C0DF91E21DF8CE600238B87 /* Info.plist */,
+				4C0DF94D21DFB1B500238B87 /* UIView+fixView.swift */,
 			);
 			path = "App Global";
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 		4C0DF94821DFAF0A00238B87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C0DF94921DFAF9900238B87 /* VotePicView.xib */,
+				4C0DF94B21DFB01800238B87 /* VotePicView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0DF91D21DF8CE600238B87 /* LaunchScreen.storyboard in Resources */,
+				4C0DF94A21DFAF9900238B87 /* VotePicView.xib in Resources */,
 				4C0DF91A21DF8CE600238B87 /* Assets.xcassets in Resources */,
 				4C0DF91521DF8CE500238B87 /* Main.storyboard in Resources */,
 			);
@@ -308,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0DF94721DFAEBB00238B87 /* VoteViewController.swift in Sources */,
+				4C0DF94C21DFB01800238B87 /* VotePicView.swift in Sources */,
 				4C0DF91821DF8CE500238B87 /* petpageant2.xcdatamodeld in Sources */,
+				4C0DF94E21DFB1B500238B87 /* UIView+fixView.swift in Sources */,
 				4C0DF91021DF8CE500238B87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
